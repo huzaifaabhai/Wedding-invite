@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Walima Reception | Huzaifa & Anii</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <script src="security.js?v=20261025_sec"></script>
+  <link rel="stylesheet" href="style.css?v=20261025_11">
+</head>
+<body class="font-theme-editorial theme-walima" oncontextmenu="return false;" onselectstart="return false;" ondragstart="return false;">
+  <canvas id="petalCanvas" aria-hidden="true"></canvas>
+
+  <main class="app-viewport" id="appViewport">
+    <div class="device-container" id="deviceContainer">
+
+      <!-- =================================================================
+           STAGE 1: Pristine Closed Royal Wax-Sealed Envelope
+           ================================================================= -->
+      <section class="envelope-screen" id="envelopeScreen" aria-label="Closed Wedding Envelope">
+        <div class="env-video-bg-wrapper" aria-hidden="true">
+          <video id="envVideo" class="env-video-bg" autoplay muted loop playsinline preload="auto">
+            <source src="hero.mp4" type="video/mp4">
+          </video>
+          <div class="env-video-overlay"></div>
+        </div>
+
+        <div class="env-corner-garland top-left" aria-hidden="true">
+          <img src="real_flowers_side.png" alt="" class="env-corner-img">
+        </div>
+        <div class="env-corner-garland top-right" aria-hidden="true">
+          <img src="real_flowers_side.png" alt="" class="env-corner-img flip-horizontal">
+        </div>
+
+        <div class="envelope-stage-container">
+          <div class="closed-envelope-box" id="envelopeBox">
+            <div class="env-damask-overlay" aria-hidden="true"></div>
+            <div class="env-inner-back"></div>
+
+            <!-- Sliding Letter Card inside pocket -->
+            <div class="env-letter" id="envLetter">
+              <div class="letter-gold-border" aria-hidden="true">
+                <div class="corner-filigree top-l"></div>
+                <div class="corner-filigree top-r"></div>
+                <div class="corner-filigree btm-l"></div>
+                <div class="corner-filigree btm-r"></div>
+              </div>
+
+              <div class="letter-card-content">
+                <div class="letter-bismillah-wrapper">
+                  <span class="letter-bismillah-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+                </div>
+
+                <div class="letter-crest-emblem" aria-hidden="true">
+                  <svg viewBox="0 0 50 20" class="letter-crest-svg">
+                    <path d="M25 6 C23 2, 18 3, 18 8 C18 13, 25 18, 25 18 C25 18, 32 13, 32 8 C32 3, 27 2, 25 6 Z" fill="#ecd49a" stroke="#c99c5c" stroke-width="0.8"/>
+                    <circle cx="8" cy="10" r="1.5" fill="#c99c5c"/>
+                    <circle cx="42" cy="10" r="1.5" fill="#c99c5c"/>
+                    <path d="M2 10 H14 M36 10 H48" stroke="#ecd49a" stroke-width="0.8"/>
+                  </svg>
+                </div>
+
+                <p class="letter-invite-sub">Grand Walima Reception</p>
+                <h2 class="letter-names-text">Huzaifa &amp; Anii</h2>
+                <div class="letter-divider-gold" aria-hidden="true"></div>
+
+                <div class="letter-guest-row">
+                  <span class="letter-guest-prefix">Warmly Inviting</span>
+                  <p class="letter-guest-name" id="letterGuestName">Our Honored Guest</p>
+                </div>
+
+                <div class="letter-date-pill">
+                  <span class="letter-date-text">Tuesday, September 29, 2027 • 7:30 PM</span>
+                </div>
+
+                <p class="letter-venue-sub">The Grand Crystal Ballroom, Serena Hotel</p>
+              </div>
+            </div>
+
+            <!-- Envelope Pocket Front Body -->
+            <div class="env-pocket-body">
+              <div class="env-damask-overlay" aria-hidden="true"></div>
+
+              <div class="env-pocket-foil-suite">
+                <svg viewBox="0 0 200 36" class="foil-filigree-svg foil-top" aria-hidden="true">
+                  <path d="M100 12 C115 12, 125 5, 140 7 C155 9, 165 19, 180 16 C188 14, 194 8, 198 12 M100 12 C85 12, 75 5, 60 7 C45 9, 35 19, 20 16 C12 14, 6 8, 2 12" stroke="#ecd49a" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                  <path d="M100 5 C104 9, 110 13, 118 10 C124 8, 126 2, 132 5 M100 5 C96 9, 90 13, 82 10 C76 8, 74 2, 68 5" stroke="#c99c5c" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+                  <circle cx="100" cy="5" r="2.5" fill="#f7e2a9"/>
+                  <circle cx="100" cy="12" r="1.8" fill="#c99c5c"/>
+                </svg>
+
+                <h2 class="pocket-foil-title" id="pocketGuestName">Our Honored Guest</h2>
+
+                <svg viewBox="0 0 200 28" class="foil-filigree-svg foil-bottom" aria-hidden="true">
+                  <path d="M100 16 C115 16, 125 22, 140 20 C155 18, 165 8, 180 11 C188 13, 194 19, 198 15 M100 16 C85 16, 75 22, 60 20 C45 18, 35 8, 20 11 C12 13, 6 19, 2 15" stroke="#ecd49a" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                  <circle cx="100" cy="16" r="2" fill="#c99c5c"/>
+                </svg>
+              </div>
+
+              
+            </div>
+
+            <!-- Top Flap -->
+            <div class="env-top-flap" id="envFlap">
+              <div class="env-damask-overlay" aria-hidden="true"></div>
+              <svg viewBox="0 0 100 54" preserveAspectRatio="none" class="flap-trim-svg" aria-hidden="true">
+                <path d="M0 40 L50 54 L100 40" stroke="#eed8a1" stroke-width="1.3" fill="none"/>
+                <path d="M0 38 L50 52 L100 38" stroke="rgba(255,255,255,0.45)" stroke-width="0.8" fill="none"/>
+              </svg>
+            </div>
+
+            <!-- Wax Seal Button -->
+            <button class="wax-seal-btn" id="waxSealBtn" type="button" aria-label="Tap wax seal to open invitation">
+              <div class="melted-wax-outer">
+                <svg viewBox="0 0 100 100" class="melted-seal-svg">
+                  <defs>
+                    <radialGradient id="waxGoldGrad" cx="35%" cy="30%" r="70%">
+                      <stop offset="0%" stop-color="#fff8db" />
+                      <stop offset="25%" stop-color="#e8bf72" />
+                      <stop offset="60%" stop-color="#b88339" />
+                      <stop offset="88%" stop-color="#7a4e18" />
+                      <stop offset="100%" stop-color="#4e2e0a" />
+                    </radialGradient>
+                    <radialGradient id="waxInnerCoin" cx="42%" cy="38%" r="62%">
+                      <stop offset="0%" stop-color="#fff4d4" />
+                      <stop offset="40%" stop-color="#cca04f" />
+                      <stop offset="85%" stop-color="#8c581e" />
+                      <stop offset="100%" stop-color="#58340d" />
+                    </radialGradient>
+                    <filter id="wax3dShadow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#3d1405" flood-opacity="0.5"/>
+                    </filter>
+                  </defs>
+                  
+                  <path d="M50 3 C60 2, 72 6, 79 14 C86 21, 93 30, 96 40 C99 50, 97 62, 92 71 C86 81, 78 88, 68 94 C58 98, 46 98, 36 94 C26 90, 16 83, 10 73 C4 63, 2 51, 5 40 C8 30, 16 20, 24 13 C33 5, 43 4, 50 3 Z" fill="url(#waxGoldGrad)" filter="url(#wax3dShadow)"/>
+                  <circle cx="50" cy="50" r="33" fill="url(#waxInnerCoin)" stroke="#ffe8a3" stroke-width="2"/>
+                  <circle cx="50" cy="50" r="29" fill="none" stroke="rgba(255, 245, 210, 0.7)" stroke-width="1.2"/>
+                  
+                  <text x="50" y="42" font-family="'Playfair Display', Georgia, serif" font-style="italic" font-weight="700" font-size="13" text-anchor="middle" fill="#442105">Tap</text>
+                  <text x="50" y="53" font-family="'Playfair Display', Georgia, serif" font-style="italic" font-weight="600" font-size="10" text-anchor="middle" fill="#502808">to</text>
+                  <text x="50" y="66" font-family="'Playfair Display', Georgia, serif" font-style="italic" font-weight="700" font-size="13" text-anchor="middle" fill="#442105">open</text>
+                </svg>
+              </div>
+              <div class="seal-glow-pulse"></div>
+            </button>
+          </div>
+
+          <div class="envelope-cue-wrapper">
+            <p class="envelope-click-cue">✨ Tap wax seal to open ✨</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           STAGE 2: Grand Royal Wedding Invitation Suite
+           ================================================================= -->
+      <article class="invitation-suite" id="invitationSuite" tabindex="-1">
+        
+        <div class="stage-top-valance" aria-hidden="true">
+          <svg viewBox="0 0 1000 120" class="stage-valance-svg" preserveAspectRatio="none">
+            <path d="M0,20 Q250,75 500,20 Q750,75 1000,20" stroke="#c99c5c" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <path d="M0,35 Q250,90 500,35 Q750,90 1000,35" stroke="#eed8a1" stroke-width="1" fill="none" opacity="0.4"/>
+          </svg>
+        </div>
+
+        <button type="button" class="music-floating-btn" id="musicToggleBtn" aria-label="Toggle Ceremony Ambient Music" aria-pressed="false">
+          <svg class="music-icon-svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M9 18V5l12-2v13"></path>
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="16" r="3"></circle>
+          </svg>
+          <span class="music-btn-label" id="musicStatusText">Sound Off</span>
+        </button>
+
+        <audio id="weddingBgm" loop preload="none">
+          <source src="ssstik.io_1792904345370.mp4" type="audio/mp4">
+        </audio>
+
+        <!-- Grand Festivities Event Navigation Bar -->
+        <nav class="festivities-nav-wrapper" aria-label="Wedding Events Navigation">
+          <ul class="festivities-nav-list">
+            <li><a href="index.html" class="festivities-nav-link "><span>🏰 All Events</span> <span class="nav-urdu">تمام تقریبات</span></a></li>
+            <li><a href="mehndi.html" class="festivities-nav-link "><span>🌿 Mehndi</span> <span class="nav-urdu">مہندی</span></a></li>
+            <li><a href="barat.html" class="festivities-nav-link "><span>👑 Barat & Nikkah</span> <span class="nav-urdu">بارات</span></a></li>
+            <li><a href="walima.html" class="festivities-nav-link active"><span>🕊️ Walima</span> <span class="nav-urdu">ولیمہ</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="suite-content-container">
+
+          <!-- SECTION 1: Grand Royal Wedding Arch Centerpiece with Background Video -->
+          <header class="suite-section hero-section" id="hero">
+            <div class="hero-arch-card has-video-bg">
+              <div class="hero-video-wrapper">
+                <video id="heroVideo" class="hero-bg-video" autoplay muted loop playsinline preload="auto">
+                  <source src="hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero-video-overlay"></div>
+              </div>
+
+              <div class="hero-card-inner">
+                <div class="bismillah-calligraphy" lang="ar" dir="rtl">
+                  بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                </div>
+
+                <div class="hero-twin-hearts" aria-hidden="true">
+                  <svg viewBox="0 0 64 36" class="twin-hearts-svg">
+                    <path d="M18,6 C13,0 4,2 4,11 C4,19 18,28 18,28 C18,28 32,19 32,11 C32,2 23,0 18,6 Z" fill="none" stroke="#ffd780" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 0 4px #ffd780)"/>
+                    <path d="M46,8 C41,2 32,4 32,13 C32,21 46,30 46,30 C46,30 60,21 60,13 C60,4 51,2 46,8 Z" fill="none" stroke="#eed8a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 0 4px #ffd780)"/>
+                  </svg>
+                </div>
+
+                <div class="hero-subhead">
+                  <span class="gold-line"></span>
+                  <span class="hero-tag">Grand Walima Reception</span>
+                  <span class="gold-line"></span>
+                </div>
+
+                <div style="font-family: var(--font-arabic); font-size: 1.55rem; color: var(--gold-light); margin: 6px 0 10px;">
+                  دعوتِ ولیمہ و استقبالیہ
+                </div>
+
+                <!-- Personalized Guest Welcome Banner -->
+                <div class="hero-guest-badge" id="heroGuestBadge">
+                  <span class="guest-badge-pre">Warmest Welcome to</span>
+                  <p class="guest-badge-name" id="heroGuestName">Our Honored Guest</p>
+                </div>
+
+                <div class="monogram-royal">
+                  <span class="mono-text">H &amp; A</span>
+                </div>
+
+                <h1 class="hero-names">
+                  <span class="name-part name-groom">Huzaifa</span>
+                  <span class="name-ampersand">&amp;</span>
+                  <span class="name-part name-bride">Anii</span>
+                </h1>
+
+                <p class="hero-date-badge">Tuesday, September 29, 2027 • 7:30 PM</p>
+
+                <div class="scroll-down-cue">
+                  <span>Scroll to Explore</span>
+                  <span class="down-arrow">↓</span>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- SECTION 2: Blessing & Verse -->
+          <section class="suite-section blessing-section reveal-item" id="blessing">
+            
+            <div class="floral-garland-divider" aria-hidden="true">
+              <svg viewBox="0 0 240 32" class="garland-twig-svg">
+                <path d="M20,16 Q80,24 120,16 Q160,8 220,16" stroke="#c99c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+                <circle cx="120" cy="16" r="7" fill="#f8d6dc"/>
+                <circle cx="120" cy="16" r="4.5" fill="#df8b99"/>
+                <circle cx="120" cy="16" r="1.8" fill="#eed8a1"/>
+                <circle cx="95" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="80" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+                <circle cx="145" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="160" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+              </svg>
+            </div>
+
+            <div class="blessing-ornate-card">
+              <div class="blessing-arabic-calligraphy" style="font-family: var(--font-arabic); font-size: clamp(1.2rem, 3.5vw, 1.6rem); color: var(--gold-light); line-height: 1.8;">
+                أَوْلِمْ وَلَوْ بِشَاةٍ — اللہ برکت عطا فرمائے
+              </div>
+              <p class="blessing-english-translation" style="font-size: 0.95rem; color: rgba(255,255,255,0.85); margin-top: 10px; font-style: italic;">
+                "Give a feast (Walima) even if with one sheep." — In joyous celebration of the Sunnah of Holy Prophet ﷺ.
+              </p>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Live Countdown Timer -->
+          <section class="suite-section countdown-section reveal-item" id="countdown" data-event-date="2027-09-29T19:30:00">
+            
+            <div class="floral-garland-divider" aria-hidden="true">
+              <svg viewBox="0 0 240 32" class="garland-twig-svg">
+                <path d="M20,16 Q80,24 120,16 Q160,8 220,16" stroke="#c99c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+                <circle cx="120" cy="16" r="7" fill="#f8d6dc"/>
+                <circle cx="120" cy="16" r="4.5" fill="#df8b99"/>
+                <circle cx="120" cy="16" r="1.8" fill="#eed8a1"/>
+                <circle cx="95" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="80" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+                <circle cx="145" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="160" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+              </svg>
+            </div>
+
+            <h2 class="cursive-title">The Countdown</h2>
+            <p class="section-tagline">Counting every cherished moment until this celebration</p>
+
+            <div class="countdown-clock-container" aria-label="Celebration Countdown">
+              <div class="countdown-tile">
+                <span class="countdown-value" id="days">00</span>
+                <span class="countdown-unit">Days</span>
+              </div>
+              <span class="countdown-colon" aria-hidden="true">:</span>
+              <div class="countdown-tile">
+                <span class="countdown-value" id="hours">00</span>
+                <span class="countdown-unit">Hours</span>
+              </div>
+              <span class="countdown-colon" aria-hidden="true">:</span>
+              <div class="countdown-tile">
+                <span class="countdown-value" id="minutes">00</span>
+                <span class="countdown-unit">Mins</span>
+              </div>
+              <span class="countdown-colon" aria-hidden="true">:</span>
+              <div class="countdown-tile">
+                <span class="countdown-value" id="seconds">00</span>
+                <span class="countdown-unit">Secs</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 4: Event Itinerary Schedule -->
+          <section class="suite-section schedule-section reveal-item" id="schedule">
+            
+            <div class="floral-garland-divider" aria-hidden="true">
+              <svg viewBox="0 0 240 32" class="garland-twig-svg">
+                <path d="M20,16 Q80,24 120,16 Q160,8 220,16" stroke="#c99c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+                <circle cx="120" cy="16" r="7" fill="#f8d6dc"/>
+                <circle cx="120" cy="16" r="4.5" fill="#df8b99"/>
+                <circle cx="120" cy="16" r="1.8" fill="#eed8a1"/>
+                <circle cx="95" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="80" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+                <circle cx="145" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="160" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+              </svg>
+            </div>
+
+            <h2 class="cursive-title">Event Schedule</h2>
+            <p class="section-tagline">A night of sublime elegance, heartfelt toasts & celebration of newlyweds</p>
+
+            <div class="responsive-timeline">
+              <div class="timeline-track"></div>
+              <svg width="0" height="0" class="svg-defs" aria-hidden="true">
+                <defs>
+                  <linearGradient id="goldMedalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#fff8dc" />
+                    <stop offset="45%" stop-color="#e2b96e" />
+                    <stop offset="80%" stop-color="#a87532" />
+                    <stop offset="100%" stop-color="#694314" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              
+              <div class="timeline-row is-revealed">
+                <div class="timeline-marker">
+                  <div class="ceremony-medallion" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" class="ceremony-svg">
+                      <circle cx="20" cy="20" r="18" fill="url(#goldMedalGrad)" stroke="#fff2bf" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="12" fill="none" stroke="#5a101b" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="#df8b99"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="timeline-card">
+                  <div class="card-header-row">
+                    <span class="event-time-badge">
+                      <svg class="time-clock-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.5v3.8l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                      7:30 PM
+                    </span>
+                    <span class="event-seq-num">01</span>
+                  </div>
+                  <h3 class="event-title">Red Carpet Reception & Mocktail Lounge</h3>
+                  <div style="font-family: var(--font-arabic); font-size: 1.18rem; color: #8e1c2e; margin: 3px 0 6px; font-weight: bold;">ریڈ کارپٹ استقبالیہ و مشروبات</div>
+                  <p class="event-desc">Arrival of esteemed dignitaries, friends, and family with artisan mocktails and violin quartet melodies.</p>
+                  <div class="card-gold-accent"></div>
+                </div>
+              </div>
+  
+              <div class="timeline-row is-revealed">
+                <div class="timeline-marker">
+                  <div class="ceremony-medallion" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" class="ceremony-svg">
+                      <circle cx="20" cy="20" r="18" fill="url(#goldMedalGrad)" stroke="#fff2bf" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="12" fill="none" stroke="#5a101b" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="#df8b99"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="timeline-card">
+                  <div class="card-header-row">
+                    <span class="event-time-badge">
+                      <svg class="time-clock-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.5v3.8l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                      8:15 PM
+                    </span>
+                    <span class="event-seq-num">02</span>
+                  </div>
+                  <h3 class="event-title">Grand Debut of the Newlyweds</h3>
+                  <div style="font-family: var(--font-arabic); font-size: 1.18rem; color: #8e1c2e; margin: 3px 0 6px; font-weight: bold;">نوبیاہتا جوڑے کا باوقار داخلہ</div>
+                  <p class="event-desc">First ceremonial appearance of Huzaifa & Anii as husband and wife amidst shimmering sparklers.</p>
+                  <div class="card-gold-accent"></div>
+                </div>
+              </div>
+  
+              <div class="timeline-row is-revealed">
+                <div class="timeline-marker">
+                  <div class="ceremony-medallion" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" class="ceremony-svg">
+                      <circle cx="20" cy="20" r="18" fill="url(#goldMedalGrad)" stroke="#fff2bf" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="12" fill="none" stroke="#5a101b" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="#df8b99"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="timeline-card">
+                  <div class="card-header-row">
+                    <span class="event-time-badge">
+                      <svg class="time-clock-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.5v3.8l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                      8:45 PM
+                    </span>
+                    <span class="event-seq-num">03</span>
+                  </div>
+                  <h3 class="event-title">Wedding Cake Cutting & Family Toasts</h3>
+                  <div style="font-family: var(--font-arabic); font-size: 1.18rem; color: #8e1c2e; margin: 3px 0 6px; font-weight: bold;">کیک کٹنگ و فیملی پیغامات</div>
+                  <p class="event-desc">Cutting of the five-tier royal wedding cake and warm words of love from family elders.</p>
+                  <div class="card-gold-accent"></div>
+                </div>
+              </div>
+  
+              <div class="timeline-row is-revealed">
+                <div class="timeline-marker">
+                  <div class="ceremony-medallion" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" class="ceremony-svg">
+                      <circle cx="20" cy="20" r="18" fill="url(#goldMedalGrad)" stroke="#fff2bf" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="12" fill="none" stroke="#5a101b" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="#df8b99"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="timeline-card">
+                  <div class="card-header-row">
+                    <span class="event-time-badge">
+                      <svg class="time-clock-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.5v3.8l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                      9:30 PM
+                    </span>
+                    <span class="event-seq-num">04</span>
+                  </div>
+                  <h3 class="event-title">Grand Continental & Mughlai Banquet</h3>
+                  <div style="font-family: var(--font-arabic); font-size: 1.18rem; color: #8e1c2e; margin: 3px 0 6px; font-weight: bold;">پُرتکلف ولیمہ ڈنر و دسترخوان</div>
+                  <p class="event-desc">A lavish gourmet feast with signature delicacies, slow-cooked whole roast, live pasta bar, and artisanal desserts.</p>
+                  <div class="card-gold-accent"></div>
+                </div>
+              </div>
+  
+              <div class="timeline-row is-revealed">
+                <div class="timeline-marker">
+                  <div class="ceremony-medallion" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" class="ceremony-svg">
+                      <circle cx="20" cy="20" r="18" fill="url(#goldMedalGrad)" stroke="#fff2bf" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="12" fill="none" stroke="#5a101b" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="#df8b99"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="timeline-card">
+                  <div class="card-header-row">
+                    <span class="event-time-badge">
+                      <svg class="time-clock-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.5v3.8l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                      11:00 PM
+                    </span>
+                    <span class="event-seq-num">05</span>
+                  </div>
+                  <h3 class="event-title">Portraits & Gracious Farewell</h3>
+                  <div style="font-family: var(--font-arabic); font-size: 1.18rem; color: #8e1c2e; margin: 3px 0 6px; font-weight: bold;">یادگار تصاویر و دعائیہ الوداع</div>
+                  <p class="event-desc">Family photography with the bride and groom and distribution of luxurious engraved souvenir favors.</p>
+                  <div class="card-gold-accent"></div>
+                </div>
+              </div>
+  
+            </div>
+          </section>
+
+          <!-- SECTION 5: Attire & Details (Matching index.html luxury cards) -->
+          <section class="suite-section etiquette-section reveal-item" id="etiquette">
+            
+            <div class="floral-garland-divider" aria-hidden="true">
+              <svg viewBox="0 0 240 32" class="garland-twig-svg">
+                <path d="M20,16 Q80,24 120,16 Q160,8 220,16" stroke="#c99c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+                <circle cx="120" cy="16" r="7" fill="#f8d6dc"/>
+                <circle cx="120" cy="16" r="4.5" fill="#df8b99"/>
+                <circle cx="120" cy="16" r="1.8" fill="#eed8a1"/>
+                <circle cx="95" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="80" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+                <circle cx="145" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="160" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+              </svg>
+            </div>
+
+            <h2 class="cursive-title">Attire &amp; Details</h2>
+
+            <div class="etiquette-grid">
+              <!-- Dress Code Card -->
+              <div class="etiquette-box">
+                <div class="etiquette-card-frame" aria-hidden="true">
+                  <div class="et-corner top-l"></div>
+                  <div class="et-corner top-r"></div>
+                  <div class="et-corner btm-l"></div>
+                  <div class="et-corner btm-r"></div>
+                </div>
+
+                <div class="etiquette-content">
+                  <div class="etiquette-medallion" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" class="et-svg">
+                      <circle cx="20" cy="20" r="18" fill="url(#goldMedalGrad)" stroke="#fff2bf" stroke-width="1.6"/>
+                      <circle cx="20" cy="20" r="14.5" fill="none" stroke="rgba(255, 255, 255, 0.45)" stroke-width="0.8"/>
+                      <polygon points="17,13.5 18.5,11.5 20,13 21.5,11.5 23,13.5 20,13.5" fill="#df8b99"/>
+                      <path d="M16 15h8l3 13H13z" fill="#5a101b"/>
+                      <path d="M18 15l2 3 2-3" stroke="#ffd780" stroke-width="1.2" fill="none"/>
+                      <rect x="15" y="19" width="10" height="1.8" rx="0.9" fill="#ffd780"/>
+                      <circle cx="20" cy="17" r="1.2" fill="#df8b99"/>
+                    </svg>
+                  </div>
+
+                  <span class="etiquette-kicker">✦ BLACK TIE & FORMAL ✦</span>
+                  <h3 class="etiquette-heading">Contemporary Black Tie & Pastels</h3>
+
+                  <p class="etiquette-desc">
+                    Sophisticated evening formals, sharp tuxedos, pastel lehengas, and designer cocktail sarees.
+                  </p>
+
+                  <div class="color-palette-guide">
+                    <div class="palette-header-row">
+                      <span class="palette-sparkle">✦</span>
+                      <span class="palette-label">Curated Color Palette</span>
+                      <span class="palette-sparkle">✦</span>
+                    </div>
+
+                    <div class="palette-swatches">
+                      
+                      <div class="swatch-item">
+                        <div class="swatch-disc" style="background: #162842;" title="Sapphire Navy">
+                          <span class="swatch-inner-ring"></span>
+                        </div>
+                        <span class="swatch-name">Sapphire Navy</span>
+                      </div>
+  
+                      <div class="swatch-item">
+                        <div class="swatch-disc" style="background: #dfb76c;" title="Champagne Gold">
+                          <span class="swatch-inner-ring"></span>
+                        </div>
+                        <span class="swatch-name">Champagne Gold</span>
+                      </div>
+  
+                      <div class="swatch-item">
+                        <div class="swatch-disc" style="background: #e8b8c8;" title="Dusty Rose">
+                          <span class="swatch-inner-ring"></span>
+                        </div>
+                        <span class="swatch-name">Dusty Rose</span>
+                      </div>
+  
+                    </div>
+
+                    <p class="palette-note">
+                      Elegant muted tones, soft pastels, and champagne metallics are warmly recommended.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gift / Blessings Card -->
+              <div class="etiquette-box">
+                <div class="etiquette-card-frame" aria-hidden="true">
+                  <div class="et-corner top-l"></div>
+                  <div class="et-corner top-r"></div>
+                  <div class="et-corner btm-l"></div>
+                  <div class="et-corner btm-r"></div>
+                </div>
+
+                <div class="etiquette-content">
+                  <div class="etiquette-medallion" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" class="et-svg">
+                      <circle cx="20" cy="20" r="18" fill="url(#goldMedalGrad)" stroke="#fff2bf" stroke-width="1.6"/>
+                      <circle cx="20" cy="20" r="14.5" fill="none" stroke="rgba(255, 255, 255, 0.45)" stroke-width="0.8"/>
+                      <rect x="13" y="18" width="14" height="10" rx="2" fill="#5a101b"/>
+                      <rect x="11.5" y="15" width="17" height="3.5" rx="1.5" fill="#5a101b"/>
+                      <line x1="20" y1="15" x2="20" y2="28" stroke="#ffd780" stroke-width="2"/>
+                      <path d="M20 15 C17 11, 14 13, 17 15 C19 16, 20 15, 20 15 C20 15, 21 16, 23 15 C26 13, 23 11, 20 15 Z" fill="#df8b99" stroke="#ffd780" stroke-width="0.8"/>
+                      <circle cx="10" cy="12" r="1.2" fill="#ffd780"/>
+                      <circle cx="30" cy="13" r="1.2" fill="#ffd780"/>
+                    </svg>
+                  </div>
+
+                  <span class="etiquette-kicker">✦ SACRED BLESSINGS ✦</span>
+                  <h3 class="etiquette-heading">Warmest Prayers</h3>
+
+                  <p class="etiquette-desc">
+                    Your heartfelt presence and earnest prayers for our new union are the greatest blessing we could ever cherish.
+                  </p>
+
+                  <div class="gift-callout-card">
+                    <div class="gift-header-row">
+                      <span class="gift-sparkle">✦</span>
+                      <span class="gift-label">A Gentle Request</span>
+                      <span class="gift-sparkle">✦</span>
+                    </div>
+
+                    <div class="gift-badge-pill">
+                      <span class="gift-badge-icon">🎁</span>
+                      <span class="gift-badge-text">No Boxed Gifts, Please</span>
+                    </div>
+
+                    <p class="gift-note">
+                      Your love, sincere prayers, and warm wishes are all we desire. Salami &amp; Duas are humbly received.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 6: The Venue (Matching index.html palace vector & buttons) -->
+          <section class="suite-section venue-section reveal-item" id="location">
+            
+            <div class="floral-garland-divider" aria-hidden="true">
+              <svg viewBox="0 0 240 32" class="garland-twig-svg">
+                <path d="M20,16 Q80,24 120,16 Q160,8 220,16" stroke="#c99c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+                <circle cx="120" cy="16" r="7" fill="#f8d6dc"/>
+                <circle cx="120" cy="16" r="4.5" fill="#df8b99"/>
+                <circle cx="120" cy="16" r="1.8" fill="#eed8a1"/>
+                <circle cx="95" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="80" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+                <circle cx="145" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="160" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+              </svg>
+            </div>
+
+            <h2 class="cursive-title">The Venue</h2>
+            <p class="section-tagline">Where our celebration unfolds</p>
+
+            <div class="venue-grid-container">
+              <div class="venue-details-col">
+                <div class="venue-sketch-art">
+                  
+                  <svg viewBox="0 0 320 160" class="palace-vector" aria-label="Islamic Center Mosque illustration with dome and crescent">
+                    <defs>
+                      <linearGradient id="palaceFoil" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#ffffff"/>
+                        <stop offset="100%" stop-color="#fdf3eb"/>
+                      </linearGradient>
+                    </defs>
+                    <rect x="22" y="35" width="12" height="105" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.2"/>
+                    <rect x="18" y="55" width="20" height="6" rx="2" fill="#fff" stroke="#c99c5c" stroke-width="1"/>
+                    <path d="M22,35 C22,25 28,18 28,18 C28,18 34,25 34,35 Z" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.2"/>
+                    <line x1="28" y1="12" x2="28" y2="18" stroke="#c99c5c" stroke-width="1.2"/>
+                    <path d="M28,8 C30,8 31.5,9.5 31.5,11.5 C31.5,13.5 30,15 28,15 C29.5,14 30.2,12.5 30.2,11.5 C30.2,10.2 29.5,8.8 28,8 Z" fill="#c99c5c"/>
+
+                    <rect x="286" y="35" width="12" height="105" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.2"/>
+                    <rect x="282" y="55" width="20" height="6" rx="2" fill="#fff" stroke="#c99c5c" stroke-width="1"/>
+                    <path d="M286,35 C286,25 292,18 292,18 C292,18 298,25 298,35 Z" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.2"/>
+                    <line x1="292" y1="12" x2="292" y2="18" stroke="#c99c5c" stroke-width="1.2"/>
+                    <path d="M292,8 C294,8 295.5,9.5 295.5,11.5 C295.5,13.5 294,15 292,15 C293.5,14 294.2,12.5 294.2,11.5 C294.2,10.2 293.5,8.8 292,8 Z" fill="#c99c5c"/>
+
+                    <path d="M160,20 C142,20 130,42 130,68 L190,68 C190,42 178,20 160,20 Z" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.3"/>
+                    <line x1="160" y1="12" x2="160" y2="20" stroke="#c99c5c" stroke-width="1.5"/>
+                    <circle cx="160" cy="12" r="1.5" fill="#c99c5c"/>
+                    <path d="M161,4 C164,4 166.5,6.5 166.5,9.5 C166.5,12.5 164,15 161,15 C163.2,13.8 164.5,11.8 164.5,9.5 C164.5,7.2 163.2,5.2 161,4 Z" fill="#c99c5c"/>
+                    <circle cx="158" cy="9.5" r="1.2" fill="#c99c5c"/>
+
+                    <path d="M78,48 C68,48 60,62 60,76 L96,76 C96,62 88,48 78,48 Z" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.2"/>
+                    <line x1="78" y1="42" x2="78" y2="48" stroke="#c99c5c" stroke-width="1.2"/>
+                    <path d="M79,38 C80.5,38 81.8,39.2 81.8,40.5 C81.8,41.8 80.5,43 79,43 C80,42.2 80.5,41.2 80.5,40.5 C80.5,39.8 80,38.8 79,38 Z" fill="#c99c5c"/>
+
+                    <path d="M242,48 C232,48 224,62 224,76 L260,76 C260,62 252,48 242,48 Z" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.2"/>
+                    <line x1="242" y1="42" x2="242" y2="48" stroke="#c99c5c" stroke-width="1.2"/>
+                    <path d="M243,38 C244.5,38 245.8,39.2 245.8,40.5 C245.8,41.8 244.5,43 243,43 C244,42.2 244.5,41.2 244.5,40.5 C244.5,39.8 244,38.8 243,38 Z" fill="#c99c5c"/>
+
+                    <rect x="34" y="76" width="252" height="64" fill="url(#palaceFoil)" stroke="#c99c5c" stroke-width="1.2"/>
+                    <path d="M138,140 L138,105 Q138,90 160,82 Q182,90 182,105 L182,140 Z" fill="#fff" stroke="#c99c5c" stroke-width="1.3"/>
+                    <path d="M84,140 L84,115 Q84,105 100,99 Q116,105 116,115 L116,140 Z" fill="#fff" stroke="#c99c5c" stroke-width="1.1"/>
+                    <path d="M204,140 L204,115 Q204,105 220,99 Q236,105 236,115 L236,140 Z" fill="#fff" stroke="#c99c5c" stroke-width="1.1"/>
+                    <line x1="14" y1="140" x2="306" y2="140" stroke="#c99c5c" stroke-width="1.8"/>
+                  </svg>
+
+                </div>
+
+                <h3 class="venue-building-name">The Grand Crystal Ballroom, Serena Hotel</h3>
+                <p class="venue-street-address">Khayaban-e-Suhrawardy, Sector G-5, Islamabad, Pakistan</p>
+
+                <div class="venue-action-buttons">
+                  <a href="https://maps.google.com/?q=Serena+Hotel+Islamabad" target="_blank" rel="noopener noreferrer" class="royal-btn primary-btn">
+                    <svg class="btn-svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+                    <span>Open in Google Maps</span>
+                  </a>
+                  <button type="button" class="royal-btn secondary-btn" id="addToCalBtn">
+                    <svg class="btn-svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" fill="currentColor"/></svg>
+                    <span>Add to Calendar</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="venue-map-col">
+                <div class="embedded-map-frame">
+                  <iframe 
+                    title="The Grand Crystal Ballroom, Serena Hotel Map" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13280.123456789!2d73.08!3d33.71!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf0000000001%3A0x1234567890abcdef!2sSerena%20Hotel!5e0!3m2!1sen!2s!4v1714000000000" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 7: RSVP Call To Action (Matching index.html 3D wax seal button) -->
+          <section class="suite-section rsvp-showcase-section reveal-item" id="rsvp">
+            
+            <div class="floral-garland-divider" aria-hidden="true">
+              <svg viewBox="0 0 240 32" class="garland-twig-svg">
+                <path d="M20,16 Q80,24 120,16 Q160,8 220,16" stroke="#c99c5c" stroke-width="1.2" fill="none" opacity="0.6"/>
+                <circle cx="120" cy="16" r="7" fill="#f8d6dc"/>
+                <circle cx="120" cy="16" r="4.5" fill="#df8b99"/>
+                <circle cx="120" cy="16" r="1.8" fill="#eed8a1"/>
+                <circle cx="95" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="80" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+                <circle cx="145" cy="13" r="4" fill="#9db69d" opacity="0.8"/>
+                <circle cx="160" cy="16" r="3" fill="#eed8a1" opacity="0.8"/>
+              </svg>
+            </div>
+
+            <h2 class="cursive-title">Confirm Your Attendance</h2>
+            <p class="rsvp-reminder">Kindly confirm your presence for <strong>Grand Walima Reception</strong> so we may warmly prepare for your arrival.</p>
+
+            <button class="royal-rsvp-wax-btn" id="openRsvpBtn" type="button" aria-haspopup="dialog" aria-expanded="false">
+              <div class="wax-circle-outer">
+                <div class="wax-circle-inner">
+                  <span class="rsvp-letters">RSVP</span>
+                  <span class="rsvp-sub">Click to Confirm</span>
+                </div>
+              </div>
+            </button>
+
+            <div id="rsvpStatusBadge" class="rsvp-confirmation-badge hidden" role="status">
+              ✓ Your RSVP has been confirmed!
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="suite-footer">
+            <div class="footer-monogram">H ❦ A</div>
+            <div class="footer-blessing-text">With the grace of Almighty Allah &amp; the blessings of our parents</div>
+            
+            <div class="footer-events-links" style="margin: 20px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+              <a href="index.html" class="festivities-nav-link">Full Suite</a>
+              <a href="mehndi.html" class="festivities-nav-link">Mehndi</a>
+              <a href="barat.html" class="festivities-nav-link">Barat &amp; Nikkah</a>
+              <a href="walima.html" class="festivities-nav-link">Walima</a>
+            </div>
+
+            <p class="footer-copyright">Celebrating Love &bull; Huzaifa &amp; Anii &bull; 2027</p>
+          </footer>
+
+        </div>
+      </article>
+
+      <!-- RSVP Modal Dialog -->
+      <dialog class="royal-dialog" id="rsvpDialog" aria-labelledby="rsvpDialogTitle">
+        <div class="dialog-card-surface">
+          <button type="button" class="dialog-close-btn" id="closeDialogBtn" aria-label="Close dialog">&times;</button>
+          
+          <div class="dialog-header-crest">
+            <div class="dialog-small-seal">H ❦ A</div>
+            <h3 class="dialog-title" id="rsvpDialogTitle">RSVP for Grand Walima Reception</h3>
+            <p class="dialog-subtitle">Please let us know if you can join our celebration</p>
+          </div>
+
+          <form class="royal-rsvp-form" id="rsvpForm">
+            <div class="form-group">
+              <label for="rsvpName" class="form-label">Your Name</label>
+              <input type="text" id="rsvpName" name="guestName" class="royal-input" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="guestCount" class="form-label">Number of Guests</label>
+              <select id="guestCount" name="guestCount" class="royal-input royal-select">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">Family (5+ Guests)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Attendance Confirmation</label>
+              <div class="rsvp-radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="attendance" value="attending" checked>
+                  <span class="radio-custom">Joyfully Attending</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="attendance" value="declining">
+                  <span class="radio-custom">Regretfully Declining</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="warmWishes" class="form-label">Warm Wishes &amp; Prayers</label>
+              <textarea id="warmWishes" name="wishes" class="royal-input royal-textarea" rows="3" placeholder="Write a heartfelt blessing for Huzaifa &amp; Anii..."></textarea>
+            </div>
+
+            <button type="submit" class="royal-submit-btn" id="submitRsvpBtn">
+              <span>Send RSVP Confirmation</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </dialog>
+
+      <div id="toastNotification" class="toast-popup" role="status" aria-live="polite"></div>
+
+    </div>
+  </main>
+
+  <script src="script.js?v=20261025_11"></script>
+</body>
+</html>
